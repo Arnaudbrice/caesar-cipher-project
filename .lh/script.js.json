@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 44,
+            "activePatchIndex": 45,
             "patches": [
                 {
                     "date": 1751633953652,
@@ -184,6 +184,10 @@
                 {
                     "date": 1751638183394,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,13 @@\n+/* Description: Implement a basic Caesar Cipher encryption.\n+Requirements:\n+The program should take a phrase and a shift number as inputs from process.argv.\n+Encrypt the phrase by shifting each letter, based on its position in the english alphabet, by the specified number.\n+Case insensitive\n+A negative shift means shift to the left\n+A positive shift means shift to the right\n+Output the encrypted phrase to the console. */\n+\n // With a shift of 3, \"HELLO\" would become \"KHOOR\".\n // efghijklmnopqrstuvwxyz\n //H->K, E->H, L->O ,L->O,O->R --> KHOOR\n const alphabet = \"abcdefghijklmnopqrstuvwxyz\";\n"
+                },
+                {
+                    "date": 1751638513301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,4 +53,5 @@\n };\n \n console.log(caesarCipher(\"hello\", shift));\n console.log(caesarCipher(\"hello world\", shift));\n+console.log(caesarCipher(\"h\", shift));\n"
                 }
             ],
             "date": 1751633953652,
