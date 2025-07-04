@@ -54,3 +54,4 @@ const caesarCipher = (text, shift) => {
 
 console.log(caesarCipher("hello", shift));
 console.log(caesarCipher("hello world", shift));
+console.log(caesarCipher("h", shift));
